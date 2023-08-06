@@ -17,14 +17,14 @@ baseRouter.post('/add', (request, res) => {
     const first = parseInt(request.body.first);
     const second = parseInt(request.body.second);
     const sum = first + second;
-    res.json({ "result:-": sum });
+    res.json({ "result": sum });
 });
 
 baseRouter.post('/subtract', (request, res) => {
     const first = parseInt(request.body.first);
     const second = parseInt(request.body.second);
     const diff = first - second;
-    res.json({ "result ": diff });
+    res.json({ "result": diff });
 });
 
 app.use(baseUrl, baseRouter);
